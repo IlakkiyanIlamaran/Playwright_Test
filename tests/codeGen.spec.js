@@ -32,6 +32,7 @@ test('test_Admin_Module_Navigation', async ({ page }) => {
   await expect(validation.includes('Admin')).toBeTruthy;
   await page.locator('span').filter({ hasText: 'Sushma Sushreddy' }).click();
   await page.getByRole('menuitem', { name: 'Logout' }).click();
+  await page.getByRole('menuitem', { name: 'Logout' }).click();
 });
 
 
